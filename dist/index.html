@@ -10,27 +10,10 @@
     <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
   </head>
 
-<body>
+  <body>
     <div id="swagger-ui"></div>
     <script src="./swagger-ui-bundle.js" charset="UTF-8"> </script>
     <script src="./swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
-    <script>
-        window.onload = function() {
-            const ui = SwaggerUIBundle({
-                url: "./RAAST.yml",
-                dom_id: '#swagger-ui',
-                deepLinking: true,
-                presets: [
-                    SwaggerUIBundle.presets.apis,
-                    SwaggerUIStandalonePreset
-                ],
-                plugins: [
-                    SwaggerUIBundle.plugins.DownloadUrl
-                ],
-                layout: "StandaloneLayout"
-            })
-        }
-    </script>
-</body>
-
+    <script src="./swagger-initializer.js" charset="UTF-8"> </script>
+  </body>
 </html>
